@@ -1,0 +1,10 @@
+version: '2'
+services:
+  app:
+    build: .
+    environment:
+      - "T_ENV_LEVEL=dev"
+      - "T_DEBUG=true"
+      - "T_API_HOST=https://places.aviasales.ru"
+    ports:
+      - "8080:8080"
